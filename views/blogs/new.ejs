@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog</title>
+</head>
+<body>
+    <form action="/blogs" method="POST">
+        <div>
+            <label for="title">title</label>
+            <input type="text" id="title" name="blog[title]">
+        </div>
+        <div>
+            <label for="date">date</label>
+            <input type="text" id="date" name="blog[date]">
+        </div>
+        <div>
+            <label for="text">text</label>
+            <textarea type="text" id="text" name="blog[text]"></textarea>
+        </div>
+        <button>Add blog</button>
+    </form>
+    <a href="/blogs">All Blogs</a>
+</body>
+</html>
